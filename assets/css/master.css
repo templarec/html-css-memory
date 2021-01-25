@@ -1,16 +1,20 @@
+/*selettori generali*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*font globale e sfondo*/
 body {
   font-family: 'Permanent Marker', cursive;
   background-color: #ADD9E6;
 }
+/*classe per centratura pagina*/
 .container {
   width: 50%;
   margin: 0 auto;
 }
+/*sezione header*/
 header .col-100 {
   width: 100%;
   margin: 0 auto;
@@ -22,12 +26,14 @@ header .col-100 h1 {
   font-size: 3em;
   font-weight: 300;
 }
+/*sezione main*/
 main .col-100 {
   width: 650px;
   height: 640px;
   margin: 0 auto;
   position: relative;
 }
+/*classe card vuota bianca*/
 .card {
   border-radius: 8px;
   border-style: groove;
@@ -38,15 +44,24 @@ main .col-100 {
   background-color: #fff;
 
 }
+/*classe retro card*/
 .overlay {
   height: 100%;
   width: 100%;
   background: url('../img/pattern.png');
   background-size: contain;
 }
+/*testo fronte carta -- default invisibile*/
 .card-text {
+  display: none;
   color: #D6227A;
+  font-size: 1.2em;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  padding-right: 5px;
 }
+/*utility posizionamento matrice di carte per righe e colonne*/
 .riga-1 {
   top: 0;
 }
@@ -68,9 +83,16 @@ main .col-100 {
 .colonna-4 {
   left: 480px;
 }
+/*sezione footer*/
 footer {
   text-align: center;
 }
+/*evento hover imposta background per ogni carta*/
+/* rivelo il testo on hover*/
+.card:hover .card-text {
+  display: block;
+}
+/*rivelo carta impostando background*/
 #c1-1:hover {
   background-image: url('../img/noun_air_balloon_3134741.png');
   background-size: contain;
@@ -144,3 +166,4 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+/*end esercizio*/
