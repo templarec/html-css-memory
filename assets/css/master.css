@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+body {
+  height: 100wh;
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-100 {
+  width: 100%;
+}
+main {
+  position: relative;
+}
+.card {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.riga-1 {
+  top: 0;
+}
+.riga-2 {
+  top: 110px;
+}
+.riga-3 {
+  top: 220px;
+}
+.colonna-1 {
+  left: 0;
+}
+.colonna-2 {
+  left: 110px;
+}
+.colonna-3 {
+  left: 220px;
+}
+.colonna-4 {
+  left: 330px;
+}
