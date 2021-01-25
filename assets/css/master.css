@@ -4,9 +4,7 @@
   box-sizing: border-box;
   border: 1px solid black;
 }
-body {
-  height: 100wh;
-}
+
 .container {
   width: 50%;
   margin: 0 auto;
@@ -16,45 +14,49 @@ body {
   clear: both;
   display: table;
 }
-.col-100 {
+header .col-100 {
   width: 100%;
   margin: 0 auto;
 }
 header .col-100 h1 {
   text-align: center;
 }
-main {
-  position: relative;
-  width: 50%;
-  height: 500px;
+main .col-100 {
+  width: 650px;
+  height: 640px;
   margin: 0 auto;
+  position: relative;
 }
 .card {
   background: url('../img/pattern.png');
   background-size: contain;
+  border-radius: 5px;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 200px;
   margin: 10px;
 }
 .riga-1 {
   top: 0;
 }
 .riga-2 {
-  top: 110px;
+  top: 210px;
 }
 .riga-3 {
-  top: 220px;
+  top: 420px;
 }
 .colonna-1 {
   left: 0;
 }
 .colonna-2 {
-  left: 110px;
+  left: 160px;
 }
 .colonna-3 {
-  left: 220px;
+  left: 320px;
 }
 .colonna-4 {
-  left: 330px;
+  left: 480px;
+}
+footer {
+  text-align: center;
 }
